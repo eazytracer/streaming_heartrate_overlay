@@ -1,24 +1,29 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 venv*
 .vscode*
+
+# python
+*__pycache__*
+*.pyc
+
 # dependencies
-/socketapp/node_modules
-/socketapp/.pnp
-/socketapp/.pnp.js
+*node_modules
+*.pnp
+*.pnp.js
 
 # testing
-/socketapp/coverage
+*/coverage
 
 # production
-/socketapp/build
+*/build
 
 # misc
-/socketapp/.DS_Store
-/socketapp/.env.local
-/socketapp/.env.development.local
-/socketapp/.env.test.local
-/socketapp/.env.production.local
+*.DS_Store
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
 
-/socketapp/npm-debug.log*
-/socketapp/yarn-debug.log*
-/socketapp/yarn-error.log*
+*npm-debug.log*
+*yarn-debug.log*
+*yarn-error.log*
